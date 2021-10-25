@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    padding: 0;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    .footer-redes {
+      display: flex;
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+      width: 25em;
+
+      .footer-redes img {
+        width: 2.5rem;
+        opacity: 1;
+      }
+     }
+     
+   }
