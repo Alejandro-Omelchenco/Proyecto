@@ -1,81 +1,67 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-.nav-index {
-  background: #FFFFFF;
-  padding: 0px 0px;
-  height: 10vh;
-  width: 100%; }
-  .nav-index .nav-index__ul {
-    list-style: none;
-    font-size: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; }
-    .nav-index .nav-index__ul .nav-index__li--logo {
-      display: flex;
-      position: relative; }
-    .nav-index .nav-index__ul .nav-index__li {
-      font-size: 20px;
-      padding: 5px 5px;
-      white-space: nowrap;
-      display: inline-block;
-      width: 10%;
-      position: relative;
-      font-size: 14px; }
-      .nav-index .nav-index__ul .nav-index__li .nav-index__li a {
-        color: #000;
-        text-decoration: none; }
-      .nav-index .nav-index__ul .nav-index__li .nav-index__li a:hover {
-        text-decoration: none;
-        color: #1c5FA8;
-        border: 2px solid #f1f1f1; }
-    .nav-index .nav-index__ul .nav-index__sub {
-      position: absolute;
-      display: none;
-      background-color: #FFFFFF; }
-      .nav-index .nav-index__ul .nav-index__sub .nav-index__li {
-        display: block; }
-        .nav-index .nav-index__ul .nav-index__sub .nav-index__li .nav-index__ul .nav-index__li:hover .nav-index__sub {
-          display: block; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 .preFooter {
   background-color: #1c5FA8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1.5rem 1.5rem; }
-  .preFooter .preFooter__h3 {
-    color: #FFFFFF;
-    margin: 0px 0px 8px;
-    font-size: 15px; }
-  .preFooter .preFooter__p {
-    color: #FFFFFF;
-    margin: 0px 0px 4px;
-    font-size: 32px; }
-  .preFooter .preFooter__p--tel {
-    color: #FFFFFF;
-    font-size: 18px; }
-  .preFooter .preFooter__h5 {
-    color: #FFFFFF;
-    margin: 0px 0px 4px;
-    font-size: 20px; }
-  .preFooter .preFooter__button {
-    color: #FFFFFF;
-    padding: 20.5px 38.5px;
-    font-size: 13px;
-    background: #1c5FA8;
-    border: solid 2px #FFFFFF; }
-  .preFooter .preFooter__button:hover {
-    background: #FFFFFF;
-    border: solid 2px #1c5FA8;
-    color: black; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.5rem 1.5rem;
+}
+
+.preFooter .preFooter__h3 {
+  color: #FFFFFF;
+  margin: 0px 0px 8px;
+  font-size: 15px;
+}
+
+.preFooter .preFooter__p {
+  color: #FFFFFF;
+  margin: 0px 0px 4px;
+  font-size: 32px;
+}
+
+.preFooter .preFooter__p--tel {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.preFooter .preFooter__h5 {
+  color: #FFFFFF;
+  margin: 0px 0px 4px;
+  font-size: 20px;
+}
+
+.preFooter .preFooter__button {
+  color: #FFFFFF;
+  padding: 20.5px 38.5px;
+  font-size: 13px;
+  background: #1c5FA8;
+  border: solid 2px #FFFFFF;
+}
+
+.preFooter .preFooter__button:hover {
+  background: #FFFFFF;
+  border: solid 2px #1c5FA8;
+  color: black;
+}
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
@@ -83,14 +69,27 @@
   opacity: 1;
   padding: 0;
   width: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; }
-  .footer .footer-redes {
-    display: flex;
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
-    width: 25em; }
-    .footer .footer-redes .footer-redes img {
-      width: 2.5rem;
-      opacity: 1; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  width: 25em;
+}
+
+.footer .footer-redes .footer-redes img {
+  width: 2.5rem;
+  opacity: 1;
+}

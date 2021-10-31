@@ -4,14 +4,5 @@
     box-sizing: border-box;
   }
   
-  //Quiero poner un modo oscuro para no lastimar la vista y el boton lo tengo que crear todavia
-*{
-  @if $button == 1 {background-color: #000;
-  color: #FFFFFF;}
-  @else if $button == 0{
-    //no cambiar nada
-  }@else{
-    //return al menos creo que asi era en c# no se si aca hay
-  }
-}
   
+
