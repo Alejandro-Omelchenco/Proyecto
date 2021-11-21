@@ -1,25 +1,23 @@
-.footer {
+.footer{
+  display: flex;
+  background-color: $oscurito;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .footer-redes{
     display: flex;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-    background-color: rgb(255, 255, 255);
-    opacity: 1;
-    padding: 0;
-    width: 100%;
+    align-items: right;
+    justify-content: right;
+    flex-wrap: wrap;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    .footer-redes {
-      display: flex;
-      margin-left: 1.5rem;
-      margin-top: 0.5rem;
-      width: 25em;
-
-      .footer-redes img {
-        width: 2.5rem;
-        opacity: 1;
-      }
-     }
-     
-   }
+    margin-top: 5px;
+    img{
+      width: 8rem;
+      margin: 10px;
+      padding-bottom: 2rem;
+      padding-left: 4rem;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}

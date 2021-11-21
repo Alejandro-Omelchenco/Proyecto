@@ -1,64 +1,142 @@
-@mixin button-variant(
-  $background,
-  $border,
-  $color: color-contrast($background),
-  $hover-background: if($color == $color-contrast-light, shade-color($background, $btn-hover-bg-shade-amount), tint-color($background, $btn-hover-bg-tint-amount)),
-  $hover-border: if($color == $color-contrast-light, shade-color($border, $btn-hover-border-shade-amount), tint-color($border, $btn-hover-border-tint-amount)),
-  $hover-color: color-contrast($hover-background),
-  $active-background: if($color == $color-contrast-light, shade-color($background, $btn-active-bg-shade-amount), tint-color($background, $btn-active-bg-tint-amount)),
-  $active-border: if($color == $color-contrast-light, shade-color($border, $btn-active-border-shade-amount), tint-color($border, $btn-active-border-tint-amount)),
-  $active-color: color-contrast($active-background),
-  $disabled-background: $background,
-  $disabled-border: $border,
-  $disabled-color: color-contrast($disabled-background)
-) {
-  color: $color;
-  @include gradient-bg($background);
-  border-color: $border;
-  @include box-shadow($btn-box-shadow);
+@import "variables";
+.presupuesto{
+  background-color:$blanco;
+  margin: 0px 5px;
+  padding: 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
-  &:hover {
-    color: $hover-color;
-    @include gradient-bg($hover-background);
-    border-color: $hover-border;
-  }
-
-  .btn-check:focus + &,
-  &:focus {
-    color: $hover-color;
-    @include gradient-bg($hover-background);
-    border-color: $hover-border;
-    @if $enable-shadows {
-      @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
-    } @else {
-      box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+    .presupuesto_container_h2{
+      color: $azul;
+      margin:0px 0px 4px;
+      text-align: center;
     }
+    .presupuesto_container_p{
+      color:$gris;
+      text-align: center;
+    }
+  .presupuesto_button{
+    background-color: $blanco;
+    padding: 21px 38px;
+    color: $azul;
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid $azul;
+    z-index: 0;
+    cursor: pointer;
+      &:hover{
+        animation: shadow-pulse 1000ms 1;
+        color:$blanco;
+        background-color: $hover;
+        border-radius: 50%;
+      }
   }
+}
 
-  .btn-check:checked + &,
-  .btn-check:active + &,
-  &:active,
-  &.active,
-  .show > &.dropdown-toggle {
-    color: $active-color;
-    background-color: $active-background;
-    background-image: if($enable-gradients, none, null);
-    border-color: $active-border;
-
-    &:focus {
-      @if $enable-shadows {
-        @include box-shadow($btn-active-box-shadow, 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5));
-      } @else {
-        box-shadow: 0 0 0 $btn-focus-width rgba(mix($color, $border, 15%), .5);
+.container-presentacion{
+  text-align: center;
+  display: flex;
+    .container-presentacion_bienvenidos{
+      text-align: left;
+      padding-left: 10rem;
+    }
+      .container-presentacion_bienvenidos_separacion{
+        border: 3px solid $hover;
+      }
+      a{
+        text-decoration: none;
+      }
+    .container-presentacion-bienvenidos__button{
+      text-decoration: none;
+      background-color: $blanco;
+      padding: 21px 38px;
+      color: $azul;
+      text-align: center;
+      margin-left: 20px;
+      position: relative;
+      display: block;
+      border-radius: 4px;
+      background-color: transparent;
+      font-size: 18px;
+      overflow: hidden;
+      transition: all 500ms ease;
+      border: 2px solid $azul;
+      z-index: 0;
+      cursor: pointer;
+        &:hover{
+        animation: shadow-pulse 1000ms 1;
+        color:$blanco;
+        background-color: $hover;
+        border-radius: 50%;
       }
     }
-  }
+    .container-presentacion-bienvenidos__h5{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+      padding-left: 1rem;
+      align-items: left ;
+      justify-content: left;
+      .container-presentacion-bienvenidos__img{
+        padding-right: 5px;
+      }
+      .container-presentacion-bienvenidos__h5--h5{
+        font-size: 16px;
+        padding-top: 5px;
+      }
+    }
+}
 
-  &:disabled,
-  &.disabled {
-    color: $disabled-color;
-    background-color: $disabled-background;
-    background-image: if($enable-gradients, none, null);
-    border-color: $disabled-border;
+.container-productos{
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  padding-left: 15px;
+  hr{
+    border: 3px solid $hover;
+  }
+  .container-productos_links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    padding-left: 5px;
+    a{
+      text-decoration: none;
+    }
+    img{
+      float: left;
+    }
+    h3{
+      padding-left: 20px;
+      font-size: 14px;
+      color: $oscuro;
+    }
+  }
+}
+.container-titulo-productos{
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: center;
+  hr{
+    border: 3px solid $hover;
+  }
+}
+.row{
+  a{
+    text-decoration: none;
+    color: $oscuro;
   }
 }

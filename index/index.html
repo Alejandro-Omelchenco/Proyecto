@@ -8,26 +8,36 @@
   <meta name="description" content="Plásticos Santa Rita es una empresa jóven fundada en el año 2000, dedicada a la fabricación de tubos y mangueras plásticas con el objetivo de brindar al cliente el producto con la mejor calidad del mercado">
   <meta name="keywords" content="Plásticos, Mangueras, Psicinas, Electricidad, Hogar">
   <title>Plásticos Santa Rita</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
-  <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header id="principio">
+<div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-F7F7F7">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="/Imagenes/Plasticos-Santa-Rita-logo.png" alt="logo">
+            <img class="wow animate__bounceIn" src="/Imagenes/Plasticos-Santa-Rita-logo.png" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
@@ -53,67 +63,111 @@
           </div>
         </div>
       </nav>
+</div>
   </header>
   <main>
-  <div class="imageContent">
-    <h2>Plásticos Santa Rita</h2>
-    <h6>La marcas más elegida por los comercios más prestigiosos y experimentados del rubro.</h6>
-    <a href="about/about.html"><button type="button" class="btn btn-primary btn-lg">SOBRE NOSOTOROS</button></a>
-  </div>
-  <div class="divContentUno">
-    <div class="contentDivUno">
-      <h2 class="contentDivUno__h2 contentDivUno__h2--color">Bienvenidos</h2>
-      <p class="contentDivUno__p contentDivUno__p--color">
-        Plásticos Santa Rita es una empresa jóven fundada en el año 2000, dedicada a la fabricación de tubos y
-        mangueras plásticas con el objetivo de abastecer a la industria con productos de calidad.
-
-        Gracias a los más de 25 años de experiencia de su fundador y contando con matricera propia tenemos la
-        capacidad de desarrollar máquinas y productos que requieran características especiales para los usos que el
-        cliente necesita.
-      </p>
-      <a href="/index/productos/productos.html"><button>Nuestros Productos</button></a>
-      <div>
-        <h5>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Imagenes/Foto Flor PSR.jpg" class="d-block w-100" alt="desagote-32mm" width="100%" height="371">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Plasticos Santa Rita</h3>
+            <p>La marca más elegida por los comercios más prestigiosos y experimentados del rubro</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imagenes/Foto Flor PSR.jpg" class="d-block w-100" alt="desagote-32mm" width="100%" height="371">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Línea Piscinas</h3>
+            <a href="/index/productos/piscinas/piscinas.html"><button class="carousel_item_button"><p>Ver más</p></button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/Imagenes/Foto Flor PSR.jpg" class="d-block w-100" alt="desagote-32mm" width="100%" height="371">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Línea Hogar</h3>
+            <a href="/index/productos/hogar/hogar.html"><button class="carousel_item_button"><p>Ver más</p></button></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="presupuesto">
+      <div class="presupuesto_container">
+      <h2 class="presupuesto_container_h2">Solicitanos un presupuesto a tu medida</h2>
+      <p class="presupuesto_container_p">Te brindaremos asesoramiento personalizado</p>
+      </div>
+      <button class="presupuesto_button">Solicitar Presupuesto</button>
+    </div>
+  <div class="container-presentacion">
+    <div class="container-presentacion_bienvenidos">
+      <h2 class="container-presentacion_bienvenidos__h2">Bienvenidos</h2>
+      <hr class="container-presentacion_bienvenidos_separacion">
+      <p class="container-presentacion_bienvenidos__p">
+      Plásticos Santa Rita es una empresa jóven fundada en el año 2000, dedicada a la fabricación de tubos y mangueras plásticas con el objetivo de abastecer a la industria con productos de calidad.
+      </p> <p> Gracias a los más de 25 años de experiencia de su fundador y contando con matricera propia tenemos la capacidad de desarrollar máquinas y productos que requieran características especiales para los usos que el cliente necesita.</p>
+      <a href="/index/productos/productos.html"><button class="container-presentacion-bienvenidos__button">Nuestros Productos</button></a>
+    <div class="container-presentacion-bienvenidos__h5">
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=5491125957821"> <img class="container-presentacion-bienvenidos__img" src="/Imagenes/whatsapp.png" alt="wpp" width="30px">
+        <h5 class="container-presentacion-bienvenidos__h5--h5">
           HABLEMOS
         </h5>
-        <p>
-          (011)4753-1842
+        <p class="container-presentacion-bienvenidos__p">
+          (011)2595-7821
         </p>
-      </div>
+      </a>
     </div>
-    <div class="divImagenUno">
-      <img src="/Imagenes/PSR-home-01.png" alt="">
+    </div>
+    <div class="container-presentacion_imagen">
+      <img class="animate__animated animate__fadeInDown" src="/Imagenes/PSR-home-01.png" alt="electricidad">
+      <img class="wow animate__rotateIn animate__delay -1s" src="/Imagenes/generic-1-1-1.png" alt="efecto1">
+      <img class="wow animate__rotateIn animate__delay -1s" src="/Imagenes/generic-1-2.png" alt="efecto2">
+      <img class="wow animate__rotateIn animate__delay -1s" src="/Imagenes/generic-1-3.png" alt="efecto3">
     </div>
   </div>
-  <div class="subContainerDos">
+  <div class="container-productos">
     <div>
       <h2>
         Plásticos Santa Rita
       </h2>
+      <hr>
       <p>
         Plásticos Santa Rita
         Contamos con matricera propia tenemos la capacidad de desarrollar máquinas y productos que requieran
         características especiales para los usos que el cliente necesita.
       </p>
     </div>
-    <div class="fondoDivDos">
-      <h3>Linea Pisicnas</h3>
-      <h3>Linea Aspirapolvo</h3>
-      <h3>Linea Electricidad</h3>
-      <h3>Linea Hogar</h3>
-      <h3>Linea Aspirante/Expelente</h3>
+    <div class="container-productos_links">
+      <a href="productos/piscinas/piscinas.html"><img src="/Imagenes/cheque.png" alt="check" width="14px"><h3>Linea Piscinas</h3></a>
+      <a target="_blank" href="productos/aspirapolvo/aspirapolvo.html"><img src="/Imagenes/cheque.png" alt="check" width="14px"><h3>Linea Aspirapolvo</h3></a>
+      <a target="_blank" href="productos/electricidad/electricidad.html"><img src="/Imagenes/cheque.png" alt="check" width="14px"><h3>Linea Electricidad</h3></a>
+      <a target="_blank" href="productos/hogar/hogar.html"><img src="/Imagenes/cheque.png" alt="check" width="14px"><h3>Linea Hogar</h3></a>
+      <a target="_blank" href="productos/aspirante/aspirante.html"><img src="/Imagenes/cheque.png" alt="check" width="14px"><h3>Linea Aspirante/Expelente</h3></a>
     </div>
   </div>
   </div>
-  <div>
+  <div class="container-titulo-productos">
     <h2>Nuestros Productos</h2>
+    <hr>
     <p>Línea piscinas | Línea aspirante/expelente | Línea hogar | Línea electricidad | Línea aspirapolvo</p>
   </div>
   <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="/index/productos/piscinas/piscinas.html">
-          <img src="/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="Lights" style="width:100%">
+          <img src="/Imagenes/Piscinas01psr.jpg" alt="pscinas" style="width:100%">
           <div class="caption">
             <p>LÍNEA PISCINAS</p>
           </div>
@@ -123,7 +177,7 @@
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="/index/productos/aspirante/aspirante.html">
-          <img src="/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="Nature" style="width:100%">
+          <img src="/Imagenes/Succionydescarga001psr.jpg" alt="aspirante" style="width:100%">
           <div class="caption">
             <p>LÍNEA ASPIRANTE/EXPELENTE</p>
           </div>
@@ -133,7 +187,7 @@
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="/index/productos/hogar/hogar.html">
-          <img src="/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="Fjords" style="width:100%">
+          <img src="/Imagenes/Linea-hogar.jpg" alt="hogar" style="width:100%">
           <div class="caption">
             <p>LÍNEA HOGAR</p>
           </div>
@@ -143,7 +197,7 @@
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="/index/productos/electricidad/electricidad.html">
-          <img src="/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="Fjords" style="width:100%">
+          <img src="/Imagenes/Lineaelectricidad001psr.jpg" alt="Fjords" style="width:100%">
           <div class="caption">
             <p>LÍNEA ELECTRICIDAD</p>
           </div>
@@ -153,7 +207,7 @@
     <div class="col-md-4">
       <div class="thumbnail">
         <a href="/index/productos/aspirapolvo/aspirapolvo.html">
-          <img src="/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="Fjords" style="width:100%">
+          <img src="/Imagenes/Lineaaspirapolvo001psr.jpg" alt="Fjords" style="width:100%">
           <div class="caption">
             <p>LÍNEA ASPIRAPOLVO</p>
           </div>
@@ -172,20 +226,20 @@
   </div>
   <footer >
     <div class="footer">
-      <a class="footer__logo--link" href="/index/index.html"><img class="footer__logo--imagen" src="/Imagenes/Plasticos-Santa-Rita-logo.png" width="150"></a>
+      <a href="/index/index.html"><img src="/Imagenes/Plasticos-Santa-Rita-logo-white.png" width="150"></a>
+      <div class="footer-redes">
+        <a href="#principio"><img class="flecha-arriba" src="/Imagenes/back-to-top.png" alt="flecha arriba" width="50px"></a>
+      </div>
     </div>
-    <div class="footer-redes">
-      <a class="footer-redes__facebook--link" href="https://www.facebook.com/plasticossantaritaarg/"><img src="/Imagenes/facebook.png"
-          alt="logo facebook" class="redes-facebook--imagen"></a>
-      <a class="footer-redes__instagram--link" href="https://www.instagram.com/plasticossantarita/"><img class="footer-redes__instagram--imagen" src="/Imagenes/instagram.png"
-          alt="logo instagram" class="redes"></a>
-      <a class="redes-whatsapp--link" href="#"><img  src="/Imagenes/whatsapp.png" alt="logo whatsapp" class="footer-redes__whatsapp--imagen"></a>
-    </div>
+    &copy;PSR Derechos Reservados 2021
   </footer>
   </div>
-  &copy;PSR Derechos Reservados 2021
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
   </script>
 </body>
 
