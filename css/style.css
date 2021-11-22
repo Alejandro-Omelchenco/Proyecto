@@ -14,6 +14,19 @@ header {
 
 .container-main {
   scroll-snap-type: y mandatory; }
+  .container-main .carousel-item button {
+    background-color: #F7F7F7;
+    text-align: center;
+    font-size: 18px;
+    padding: .2rem 2rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: #1c5fa8;
+    color: #1c5fa8; }
+    .container-main .carousel-item button:hover {
+      background-color: #1c5fa8;
+      color: #F7F7F7;
+      border-color: #F7F7F7; }
   .container-main .presupuesto {
     background-color: #F7F7F7;
     margin: 0px 5px;

@@ -1,6 +1,23 @@
 @import "variables";
 .container-main{
   scroll-snap-type: y mandatory;
+.carousel-item{
+  button{
+    background-color: $blanco;
+    text-align: center;
+    font-size: 18px;
+    padding: .2rem 2rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color:$azul;
+    color: $azul;
+    &:hover{
+      background-color: $azul;
+      color: $blanco;
+      border-color: $blanco;
+    }
+  }
+}
 .presupuesto{
   background-color:$blanco;
   margin: 0px 5px;
