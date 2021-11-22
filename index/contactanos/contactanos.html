@@ -5,123 +5,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSR CONTACTANOS</title>
+    <meta name="description"
+        content="Plásticos Santa Rita es una empresa jóven fundada en el año 2000, dedicada a la fabricación de tubos y mangueras plásticas con el objetivo de brindar al cliente el producto con la mejor calidad del mercado">
+    <meta name="keywords" content="Plásticos, Mangueras, Psicinas, Electricidad, Hogar">
+    <title>Plásticos Santa Rita</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Imagenes/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Imagenes/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Imagenes/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/PSR/Css/style.css">
-    <link rel="stylesheet" href="/PSR/Css/menu.css">
-    <link rel="stylesheet" href="/PSR/Css/footer.css">
-    <link rel="stylesheet" href="/PSR/Css/contactanos.css">
-    <!--Google Fonts-->
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <!--Animate Css-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <header>
+    <header id="principio">
         <div class="container">
-            <nav class="nav-container">
-                <ul class="container-nav__ul">
-                    <li class="nav-container__li--logo"><a class="nav-container__li--link" href="index.html"><img
-                                src="/PSR/Imagenes/Plasticos-Santa-Rita-logo.png" width="150"
-                                alt="Logo de la empresa"></a></li>
-                    <li class="nav-container__li"><a class="nav-container__li--link" href="index.html">Inicio</a></li>
-                    <li class="nav-container__li"><a class="nav-container__li--link" href="about.html">Nosotros</a></li>
-                    <li class="nav-container__li"><a class="nav-container__li--link" href="productos.html">Productos</a>
-                        <ul class="nav-container__ul">
-                            <li class="nav-container__li--item"><a class="nav-container__li--link"
-                                    href="/PSR/piscinas.html">Línea Piscinas</a></li>
-                            <li class="nav-container__li--item"><a class="nav-container__li--link"
-                                    href="/PSR/aspirante.html">Línea Aspirante/Expelente</a></li>
-                            <li class="nav-container__li--item"><a class="nav-container__li--link"
-                                    href="/PSR/hogar.html">Línea Hogar</a></li>
-                            <li class="nav-container__li--item"><a class="nav-container__li--link"
-                                    href="/PSR/electricidad.html">Línea Electricidad</a></li>
-                            <li class="nav-container__li--item"><a class="nav-container__li--link"
-                                    href="/PSR/aspirapolvo.html">Línea Aspira Polvo</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-F7F7F7">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="wow animate__bounceIn" src="/Imagenes/Plasticos-Santa-Rita-logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index/about/about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/index/productos/productos.html"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/index/productos/piscinas/piscinas.html">Línea
+                                            Piscinas</a></li>
+                                    <li><a class="dropdown-item" href="/index/productos/aspirante/aspirante.html">Línea
+                                            Aspirante/Expelente</a></li>
+                                    <li><a class="dropdown-item" href="/index/productos/hogar/hogar.html">Línea
+                                            Hogar</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/index/productos/electricidad/electricidad.html">Línea
+                                            Electricidad</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/index/productos/aspirapolvo/aspirapolvo.html">Línea Aspirapolvo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index/contactanos/contactanos.html">Contacto</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav__container__li--item"><a class="nav-container__li--link"
-                            href="contactanos.html">Contacto</a></li>
-
+                    </div>
+                </div>
             </nav>
-
+        </div>
     </header>
-    <main class="main">
-        <div class="content animate__animated animate__fadeIn">
-            <h1 class=" main-h1 main-h1--color">Contacto</h1>
-            <div class="contactWrapper animated bounceInUp">
-                <div class="contactForm">
-                    <h3>Contactanos</h3>
-                    <form action="">
-                        <p>
-                            <label for="">Nombre Completo</label>
-                            <input type="text" name="fullname">
-                        </p>
-                        <p>
-                            <label for="">Email</label>
-                            <input type="email" name="email">
-                        </p>
-                        <p>
-                            <label for="">Teléfono</label>
-                            <input type="tel" name="phone">
-                        </p>
-                        <p>
-                            <label for="">Asunto</label>
-                            <input type="text" name="affair">
-                        </p>
-                        <p class="block">
-                            <label for="">Mensaje</label>
-                            <textarea name="message" rows="3"></textarea>
-                        </p>
-                        <p class="block">
-                            <button type="submit">
-                                Enviar
-                            </button>
-                        </p>
-                    </form>
-                </div>
-                <div class="contactInfo">
-                    <h4>Mas Infomarción</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i>Jose Maria Bosch 5419 1650 General San Martin Buenos
-                            Aires</li>
-                        <li><i class="fas fa-phone"></i>Teléfono:(011) 4753 1842</li>
-                        <li><i class="fas fa-envelope-open-text"></i>Email:ventas@plasticossantarita.com.ar</li>
-                        <li><i class="fab fa-whatsapp"></i>Whatsapp:11 2595 7821</li>
-                    </ul>
-                    <p>
-                        Gracias a los más de 25 años de experiencia de su fundador y contando con matricera propia
-                        tenemos la capacidad de desarrollar máquinas y productos que requieran características
-                        especiales para los usos que el cliente necesita.
-                    </p>
-                </div>
+    <main>
+        <div class="container-formulario">
+            <h1>Contacto</h1>
+            <div class="container-formulario_info">
+                <h2>J. M. Bosch 5419, Billinghurst, Provincia de Buenos Aires</h2>
+                <a
+                    href="https://www.google.com/maps/place/J.+M.+Bosch+5419,+Billinghurst,+Provincia+de+Buenos+Aires/@-34.5787814,-58.5647918,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb9da637e45ed:0xd9dd9835dd1738bb!8m2!3d-34.5787858!4d-58.5626031">VER
+                    UBICACION EN EL MAPA</a>
+                <p>Email:ventas@plasticossantarita.com.ar</p>
+                <p>Teléfono:(011)4753-1842</p>
+                <p>Whatsapp: 11-2595-7821</p>
+                <p>Gracias a los más de 25 años de experiencia de su fundador y contando con matricera propia tenemos la
+                    capacidad de desarrollar máquinas y productos que requieran características especiales para los usos
+                    que el cliente necesita.</p>
+            </div>
+            <div class="container-formulario_campos">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lasttName" required>
+                    </div>
+                    <div class="col-md-8" >
+                        <label for="emailInfo" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="emailInfo" required>
+                        <div class="col-mid-4">
+                            <label for="phoneNumber">Teléfono</label>
+                            <input type="text" class="form-control" id="phoneNumber" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comments" class="form-label">Motivo de la consulta</label>
+                            <textarea class="form-control" id="comments" rows="3" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div>
-          <a class="footer-logo--link" href="index.html"><img class="footer-logo--imagen" src="PSR\Imagenes\logoPlasticosSantarita.png" width="150"></a>
-        </div>
-        <div class="redes">
-          <a class="redes-facebook--link" href="https://www.facebook.com/plasticossantaritaarg/"><img src="/PSR/Imagenes/facebook.png"
-              alt="logo facebook" class="redes-facebook--imagen"></a>
-          <a class="redes-instagram--link" href="https://www.instagram.com/plasticossantarita/"><img class="redes-instagram--imagen" src="/PSR/Imagenes/instagram.png"
-              alt="logo instagram" class="redes"></a>
-          <a class="redes-whatsapp--link" href="#"><img  src="/PSR/Imagenes/whatsapp.png" alt="logo whatsapp" class="redes-whatsapp--imagen"></a>
-        </div>
-      </footer>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0033667657112!2d-58.56479178417546!3d-34.578781363687135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9da637e45ed%3A0xd9dd9835dd1738bb!2sJ.%20M.%20Bosch%205419%2C%20Billinghurst%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1637543012690!5m2!1ses-419!2sar"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    &copy;PSR Derechos Reservados 2021
-
+    <footer>
+        <div class="footer">
+            <a href="/index/index.html"><img src="/Imagenes/Plasticos-Santa-Rita-logo-white.png" width="150"></a>
+            <div class="footer-redes">
+                <a href="#principio"><img class="flecha-arriba" src="/Imagenes/back-to-top.png" alt="flecha arriba"
+                        width="50px"></a>
+            </div>
+        </div>
+        &copy;PSR Derechos Reservados 2021
+    </footer>
+    </div>
 </body>
 
 </html>

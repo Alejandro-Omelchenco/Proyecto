@@ -123,6 +123,9 @@
       padding-left: 20px;
       font-size: 14px;
       color: $oscuro;
+      &:hover{
+        color: $hover;
+      }
     }
   }
 }
@@ -139,4 +142,13 @@
     text-decoration: none;
     color: $oscuro;
   }
+  img{
+    border-radius: 2rem;
+    transition: ease-in-out;
+  &:hover{
+    border: solid 5px $hover;
+    transition: ease-in-out;
+  }
+  }
+
 }
