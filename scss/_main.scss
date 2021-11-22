@@ -1,4 +1,6 @@
 @import "variables";
+.container-main{
+  scroll-snap-type: y mandatory;
 .presupuesto{
   background-color:$blanco;
   margin: 0px 5px;
@@ -151,4 +153,5 @@
   }
   }
 
+}
 }

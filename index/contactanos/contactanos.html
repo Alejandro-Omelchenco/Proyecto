@@ -75,45 +75,56 @@
     </header>
     <main>
         <div class="container-formulario">
-            <h1>Contacto</h1>
-            <div class="container-formulario_info">
-                <h2>J. M. Bosch 5419, Billinghurst, Provincia de Buenos Aires</h2>
-                <a
-                    href="https://www.google.com/maps/place/J.+M.+Bosch+5419,+Billinghurst,+Provincia+de+Buenos+Aires/@-34.5787814,-58.5647918,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb9da637e45ed:0xd9dd9835dd1738bb!8m2!3d-34.5787858!4d-58.5626031">VER
-                    UBICACION EN EL MAPA</a>
-                <p>Email:ventas@plasticossantarita.com.ar</p>
-                <p>Teléfono:(011)4753-1842</p>
-                <p>Whatsapp: 11-2595-7821</p>
-                <p>Gracias a los más de 25 años de experiencia de su fundador y contando con matricera propia tenemos la
-                    capacidad de desarrollar máquinas y productos que requieran características especiales para los usos
-                    que el cliente necesita.</p>
+            <div class="container-formulario_h1">
+                <h1>Contacto</h1>
+                <nav class="container-formulario_nav" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/index/index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+                    </ol>
+                </nav>
             </div>
-            <div class="container-formulario_campos">
-                <form class="row g-3">
-                    <div class="col-md-4">
-                        <label for="firstName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="firstName" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="lastName" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="lasttName" required>
-                    </div>
-                    <div class="col-md-8" >
-                        <label for="emailInfo" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="emailInfo" required>
-                        <div class="col-mid-4">
-                            <label for="phoneNumber">Teléfono</label>
-                            <input type="text" class="form-control" id="phoneNumber" required>
+            <div class="container-info-campos">
+                <div class="container-formulario_info">
+                    <h2>J. M. Bosch 5419, Billinghurst, Provincia de Buenos Aires</h2>
+                    <a
+                        href="https://www.google.com/maps/place/J.+M.+Bosch+5419,+Billinghurst,+Provincia+de+Buenos+Aires/@-34.5787814,-58.5647918,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcb9da637e45ed:0xd9dd9835dd1738bb!8m2!3d-34.5787858!4d-58.5626031">VER
+                        UBICACION EN EL MAPA</a>
+                    <p><img src="/Imagenes/email.png" alt="email"> Email:ventas@plasticossantarita.com.ar</p>
+                    <p><img src="/Imagenes/phone-call.png" alt="teléfono">Teléfono:(011)4753-1842</p>
+                    <p><img src="/Imagenes/whatsapp.png" alt="whatsapp">Whatsapp: 11-2595-7821</p>
+                    <p class="container-formulario_info__p">Gracias a los más de 25 años de experiencia de su fundador y
+                        contando con matricera propia tenemos la capacidad de desarrollar máquinas y productos que
+                        requieran características especiales para los usos
+                        que el cliente necesita.</p>
+                </div>
+                <div class="container-formulario_campos">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" required>
                         </div>
-                        <div class="col-md-12">
-                            <label for="comments" class="form-label">Motivo de la consulta</label>
-                            <textarea class="form-control" id="comments" rows="3" required></textarea>
+                        <div class="col-md-4">
+                            <label for="lastName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="lasttName" required>
                         </div>
-                        <div class="col-md-12">
-                            <button type="button" class="btn btn-primary">Enviar</button>
+                        <div class="col-md-8">
+                            <label for="emailInfo" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="emailInfo" required>
+                            <div class="col-mid-4">
+                                <label for="phoneNumber">Teléfono</label>
+                                <input type="text" class="form-control" id="phoneNumber" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="comments" class="form-label">Motivo de la consulta</label>
+                                <textarea class="form-control" id="comments" rows="3" required></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="button" class="btn btn-primary">Enviar</button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
@@ -132,7 +143,13 @@
         </div>
         &copy;PSR Derechos Reservados 2021
     </footer>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

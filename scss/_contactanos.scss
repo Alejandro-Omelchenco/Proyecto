@@ -1,8 +1,53 @@
 @import "variables";
 .container-formulario{
-    padding-left: 2rem;
+    padding-left: 0px;
+    .container-info-campos{
+        display: flex;
+    }
+    .container-formulario_h1{
+        background-color: $oscuro;
+        background-size: cover;
+        color: $blanco;
+        padding: 2rem 2rem;
+        a{
+            text-decoration: none;
+        }
+    }
+    .container-formulario_info{
+        padding-top: 1rem;
+        h2{
+            font-size: 1.5rem;
+        }
+        a{
+            padding: 1rem 1rem;
+            text-decoration: none;
+            font-size: 1rem;
+            &:hover{
+                color: $hover;
+                text-decoration: underline;
+                transition: ease;
+            }
+        }
+        p{
+            margin-left: 1rem;
+            padding-top: 2rem;
+        }
+        img{
+            width: 28px;
+            margin-right: 1rem;
+        }
+        .container-formulario_info__p{
+            color: $gris;
+        }
+    }
     .container-formulario_campos{
         padding-left: 1.5rem;
         padding-bottom: 1.5rem;
+        label{
+            margin-top: 5px;
+        }
+        button{
+            margin-top: 8px;
+        }
     }
 }

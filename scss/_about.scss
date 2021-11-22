@@ -1,0 +1,76 @@
+@import"variables";
+
+.container-formulario_h1 {
+    background-color: $oscuro;
+    padding: 2rem 2rem;
+
+    h1 {
+        color: $blanco;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.container-presentacion {
+    text-align: center;
+    display: flex;
+
+    .container-presentacion_bienvenidos {
+        text-align: left;
+        padding-left: 10rem;
+    }
+
+    .container-presentacion_bienvenidos_separacion {
+        border: 3px solid $hover;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .container-presentacion-bienvenidos__button {
+        text-decoration: none;
+        background-color: $blanco;
+        padding: 21px 38px;
+        color: $azul;
+        text-align: center;
+        margin-left: 20px;
+        position: relative;
+        display: block;
+        border-radius: 4px;
+        background-color: transparent;
+        font-size: 18px;
+        overflow: hidden;
+        transition: all 500ms ease;
+        border: 2px solid $azul;
+        z-index: 0;
+        cursor: pointer;
+
+        &:hover {
+            animation: shadow-pulse 1000ms 1;
+            color: $blanco;
+            background-color: $hover;
+            border-radius: 50%;
+        }
+    }
+
+    .container-presentacion-bienvenidos__h5 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        align-items: left;
+        justify-content: left;
+
+        .container-presentacion-bienvenidos__img {
+            padding-right: 5px;
+        }
+
+        .container-presentacion-bienvenidos__h5--h5 {
+            font-size: 16px;
+            padding-top: 5px;
+        }
+    }
+}

@@ -1,8 +1,11 @@
 @import "variables";
+header{
+   background-color: $blanquito;
+}
 .container{
-   background-color: $blanco;
+   background-color: $blanquito;
    .container-fluid{
-      background-color:$blanco;
+      background-color:$blanquito;
    }
 
 }
