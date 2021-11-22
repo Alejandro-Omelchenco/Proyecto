@@ -5,95 +5,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSR ASPIRAPOLVO</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/PSR/Css/style.css">
-    <link rel="stylesheet" href="/PSR/Css/menu.css">
-    <link rel="stylesheet" href="/PSR/Css/footer.css">
+    <meta name="description"
+        content="Plásticos Santa Rita es una empresa jóven fundada en el año 2000, dedicada a la fabricación de tubos y mangueras plásticas con el objetivo de brindar al cliente el producto con la mejor calidad del mercado">
+    <meta name="keywords" content="Plásticos, Mangueras, Psicinas, Electricidad, Hogar">
+    <title>Aspirapolvo-Plásticos Santa Rita</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Imagenes/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Imagenes/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Imagenes/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
-    <header>
+    <header id="principio">
         <div class="container">
-            <nav>
-                <ul class="menu">
-                    <li class="logo"><a href="index.html"><img src="/PSR/Imagenes/Plasticos-Santa-Rita-logo.png"
-                                width="150" alt="Logo de la empresa"></a></li>
-                    <li class="item"><a href="index.html">Inicio</a></li>
-                    <li class="item"><a href="about.html">Nosotros</a></li>
-                    <li class="item"><a href="productos.html">Productos</a>
-                        <ul>
-                            <li class="item"><a href="/PSR/piscinas.html">Línea Piscinas</a></li>
-                            <li class="item"><a href="/PSR/aspirante.html">Línea Aspirante/Expelente</a></li>
-                            <li class="item"><a href="/PSR/hogar.html">Línea Hogar</a></li>
-                            <li class="item"><a href="/PSR/electricidad.html">Línea Electricidad</a></li>
-                            <li class="item"><a href="/PSR/aspirapolvo.html">Línea Aspira Polvo</a></li>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="wow animate__bounceIn" src="/Imagenes/Plasticos-Santa-Rita-logo.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index/about/about.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/index/productos/productos.html"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/index/productos/piscinas/piscinas.html">Línea
+                                            Piscinas</a></li>
+                                    <li><a class="dropdown-item" href="/index/productos/aspirante/aspirante.html">Línea
+                                            Aspirante/Expelente</a></li>
+                                    <li><a class="dropdown-item" href="/index/productos/hogar/hogar.html">Línea
+                                            Hogar</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/index/productos/electricidad/electricidad.html">Línea
+                                            Electricidad</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="/index/productos/aspirapolvo/aspirapolvo.html">Línea Aspirapolvo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index/contactanos/contactanos.html">Contacto</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="item"><a href="contactanos.html">Contacto</a></li>
+                    </div>
+                </div>
             </nav>
-            <div class="title">
-                <h1>Productos</h1>
-            </div>
-    </header>
-    <div id="galeria">
-        <div class="imagenes">
-            <a href="PSR/piscinas.html">
-                <img src="/PSR/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="">
-            </a>
-            <h3>Línea Piscinas</h3>
         </div>
-        <div class="imagenes">
-            <a href="/PSR/aspirante.html">
-                <img src="/PSR/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="">
-            </a>
-            <h3>Línea Aspirante/Expelente</h3>
-        </div>
-        <div class="imagenes">
-            <a href="/PSR/hogar.html">
-                <img src="/PSR/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="">
-            </a>
-            <h3>Línea Hogar</h3>
-        </div>
-        <div class="imagenes">
-            <a href="/PSR/electricidad.html">
-                <img src="/PSR/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="">
-            </a>
-            <h3>Línea Electricidad </h3>
-        </div>
-        <div class="imagenes">
-            <a href="/PSR/aspirapolvo.html">
-                <img src="/PSR/Imagenes/Plasticos-Santa-Rita-piletas.jpg" alt="">
-            </a>
-            <h3>Línea Aspirapolvo</h3>
-        </div>
-    </div>
-    <div class="preFooter">
-        <h3 class="hpsr">Plasticos Santa Rita</h3>
-        <h3 class="aseso">Solicitanos asesoramiento personalizado</h3>
-        <p>Con gusto responderemos todas tus consultas</p>
-        <h5>Hablemos</h5>
-        <p>(011)4753-1842</p>
-        <a href="contactanos.html"><button>Hacer una consulta</button></a>
-    </div>
 
-    <footer class="footer">
-        <div>
-          <a class="footer-logo--link" href="index.html"><img class="footer-logo--imagen" src="PSR\Imagenes\logoPlasticosSantarita.png" width="150"></a>
+        <main>
+            <div class="container-h1">
+                <h1>Línea Aspirapolvo</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/index/index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="/index/productos/productos.html">Productos</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Línea Aspirapolvo</li>
+                </ol>
+            </nav>
+            </div>
+            <div class="container-imagenes">
+            <div><img src="/Imagenes/hogar/img98.jpg" alt="aspiradora turbofless" width="500px"><h2>Manguera Aspirapolvo</h2>
+            <p>20mm | 25mm | 32mm | 40mm | 50mm | 63mm | 76mm | 89mm* | 102mm* | 127mm* | 153mm*</p></div>
+        </main>
+        <div class="preFooterDos">
+            <p>Todos los rollos se venden por 30mts a excepción de los marcados con (*) que se venden por 20mts y se fabrican a pedido.</p>
         </div>
-        <div class="redes">
-          <a class="redes-facebook--link" href="https://www.facebook.com/plasticossantaritaarg/"><img src="/PSR/Imagenes/facebook.png"
-              alt="logo facebook" class="redes-facebook--imagen"></a>
-          <a class="redes-instagram--link" href="https://www.instagram.com/plasticossantarita/"><img class="redes-instagram--imagen" src="/PSR/Imagenes/instagram.png"
-              alt="logo instagram" class="redes"></a>
-          <a class="redes-whatsapp--link" href="#"><img  src="/PSR/Imagenes/whatsapp.png" alt="logo whatsapp" class="redes-whatsapp--imagen"></a>
+        <div class="wow animate__pulse preFooter">
+            <h3 class="preFooter__h3 ">Solicitanos asesoramiento personalizado</h3>
+            <p class="preFooter__p">Con gusto responderemos todas tus consultas</p>
+            <h5 class="preFooter__h5">Hablemos</h5>
+            <p class="preFooter__p--tel">(011)2595-7821</p>
+            <a class="preFooter__button--link" href="/index/contactanos/contactanos.html"><button
+                    class="preFooter__button">Hacer una consulta</button></a>
         </div>
-      </footer>
-    </div>
-    &copy;PSR Derechos Reservados 2021
+        <footer>
+            <div class="footer">
+                <a href="/index/index.html"><img src="/Imagenes/Plasticos-Santa-Rita-logo-white.png" width="150"></a>
+                <div class="footer-redes">
+                    <a href="#principio"><img class="flecha-arriba" src="/Imagenes/back-to-top.png" alt="flecha arriba"
+                            width="50px"></a>
+                </div>
+            </div>
+            &copy;PSR Derechos Reservados 2021
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
 </body>
 

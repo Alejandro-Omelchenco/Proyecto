@@ -1,0 +1,68 @@
+@import "variables";
+
+.container-productos {
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    padding-left: 15px;
+
+    hr {
+        border: 3px solid $hover;
+    }
+
+    .container-productos_links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-decoration: none;
+        padding-left: 8px;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            float: left;
+        }
+
+        h3 {
+            padding-left: 20px;
+            font-size: 14px;
+            color: $oscuro;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+}
+
+.container-titulo-productos {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+
+    hr {
+        border: 3px solid $hover;
+    }
+}
+
+.row {
+    a {
+        text-decoration: none;
+        color: $oscuro;
+    }
+
+    img {
+        border-radius: 2rem;
+        transition: ease-in-out;
+
+        &:hover {
+            border: solid 5px $hover;
+            transition: ease-in-out;
+        }
+    }
+
+}
